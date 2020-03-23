@@ -1,3 +1,6 @@
+@import "icomoon.scss";
+
+
 .container {
     width: 80%;
     margin: auto;
@@ -14,11 +17,25 @@
     height: 100%;
 }
 
-header, footer {
-    background-color: rgb(0, 0, 73);
+header{
+    .Logo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    text-align: right;
+}
+
+footer {
+    background-color: rgb(0, 0, 197);
+    margin-bottom: 50px;
     color: white;
     width: 100%;
-    text-align: center;
+    height: auto;
+    p {
+        text-align: center;
+    }
 }
 
 .card {
@@ -40,30 +57,73 @@ html, body {
 }
 
 .box {
-    background-color: gray;
-    opacity: 0.9;
     width: 90%;
     padding: 5%;
-    position: absolute;
-    bottom: -25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .top-middle {
-    position: absolute;
     color: rgb(128, 9, 9);
-    bottom: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 1.73em;
+}
+
+.Logo {
+    background: #474747;
+    float: left;
+    display: block;
+    width: 400px;
+    height: 328px;
+}
+.btn2 {
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 0;
+    cursor: pointer;
+    float: left;
 }
 
 .two-img {
     float: left;
     width: 50%;
-    padding: 5px;
+    padding: 0px;
 }
+.three-img {
+    float: left;
+    width: 33%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}    
+.btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        margin-left: 1%;
+        cursor: pointer;
+}
+.btn:hover {
+        background-color: RoyalBlue;
+}
+.block {
+    display: inline-block;
+}
+i {
+    p {
+        margin: 0;
+    }
+}
+* {
+    box-sizing: initial;
+}
+  
+
 
 @media screen and (max-width: 850px) {
     .flex {
@@ -96,12 +156,5 @@ html, body {
         float: left;
         width: 100%;
         padding: 5px;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    .box{
-        width: 60%;
-        bottom: 0;
     }
 }
