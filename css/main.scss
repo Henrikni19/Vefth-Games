@@ -1,0 +1,195 @@
+@import "icomoon.scss";
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.mybutton {
+    background: #f7786b;
+    font-size: 0.75em;
+}
+
+.resize {
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    .Logo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    text-align: right;
+}
+
+footer {
+    background-color: rgb(0, 0, 197);
+    margin-bottom: 50px;
+    color: white;
+    width: 100%;
+    height: auto;
+    p {
+        text-align: center;
+    }
+}
+
+.card {
+    .rfooter, .lfooter {
+        padding: 0;
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+    }
+
+    body {
+        padding: 0;
+    }
+}
+
+html, body {
+    background: #474747;
+}
+
+.box {
+    width: 90%;
+    padding: 5%;
+}
+
+.top-middle {
+    color: rgb(128, 9, 9);
+    font-size: 1.73em;
+}
+
+.Logo {
+    background: #474747;
+    float: left;
+    display: block;
+    width: 400px;
+    height: 328px;
+}
+.btn2 {
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 0;
+    cursor: pointer;
+    float: left;
+}
+
+.two-img {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+.three-img {
+    float: left;
+    width: 33%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}    
+.btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        margin-left: 1%;
+        cursor: pointer;
+}
+.btn:hover {
+        background-color: RoyalBlue;
+}
+.block {
+    display: inline-block;
+}
+i {
+    p {
+        margin: 0;
+    }
+}
+* {
+    box-sizing: initial;
+}
+
+.ad {
+    width: 300px;
+    height: 300px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    float: right;
+}
+  
+.ad:hover {
+    transform: rotate(360deg);
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: 45%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }  
+.arrowe {
+    width: 100px;
+    height: 100px;
+    
+}  
+
+
+#div1 {transition-timing-function: ease-out;}
+
+@keyframes example {
+    0%   {top:0px;}
+    50%  {top:100px;}
+    100%   {top:0px;}
+}
+
+
+@media screen and (max-width: 850px) {
+    .flex {
+        display: inline-block;
+    }
+    .top-middle {
+        position: relative;
+        color: black;
+        bottom: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+    
+    }
+    .box {
+        background-color: white;
+        width: 100%;
+        padding: 0%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .card p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .two-img {
+        float: left;
+        width: 100%;
+        padding: 5px;
+    }
+}
