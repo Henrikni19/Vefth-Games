@@ -122,7 +122,42 @@ i {
 * {
     box-sizing: initial;
 }
+
+.ad {
+    width: 300px;
+    height: 300px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    float: right;
+}
   
+.ad:hover {
+    transform: rotate(360deg);
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: 45%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }  
+.arrowe {
+    width: 100px;
+    height: 100px;
+    
+}  
+
+
+#div1 {transition-timing-function: ease-out;}
+
+@keyframes example {
+    0%   {top:0px;}
+    50%  {top:100px;}
+    100%   {top:0px;}
+}
 
 
 @media screen and (max-width: 850px) {
