@@ -17,13 +17,7 @@
     height: 100%;
 }
 
-header{
-    .Logo {
-        display: block;
-        width: 100%;
-        height: 100%;
-        float: left;
-    }
+.topmenu{
     text-align: right;
 }
 
@@ -148,8 +142,12 @@ i {
     width: 100px;
     height: 100px;
     
-}  
-
+}
+.menuLabel {
+    .hamburger {
+        display: none;
+    }
+}
 
 #div1 {transition-timing-function: ease-out;}
 
@@ -159,7 +157,65 @@ i {
     100%   {top:0px;}
 }
 
+@media screen and (max-width: 48em) {
+    .menuInput {
+        display: none
+    }
+    .menuLabel {
+        .hamburger {
+            width: auto;
+            height: 100%;
+            display: flex;
+        }
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 2.5em;
+        height: 1.6em;
+        font-size: 1.5em;
+        text-align: left;
+        padding: .5em;
+        transition: all .4s ease;
+        z-index: 999
+    }
+    .menuInput:checked+.menuLabel {
+        transition: all .5s ease
+    }
+    .menuInput:checked ~ .topmenu {
+        position: fixed;
+        top: 3em;
+        right: 0;
+        z-index: 980;
+        transition: all .5s ease
+    }
+    .topmenu {
+        display: block;
+        position: fixed;
+        top: 3em;
+        right: -15em;
+        z-index: 980;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        transition: all .5s ease;
+        background-color: none;
+    }
+    
+    .topmenu .btn {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 1em 2em 0 2em;
+        margin: 0;
+        letter-spacing: 2px;
 
+    }
+    
+    .topmenu a:last-child {
+        padding: 1em 2em
+    }
+}
 @media screen and (max-width: 850px) {
     .flex {
         display: inline-block;
