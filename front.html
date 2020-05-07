@@ -7,22 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic@6.5.0/picnic.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="../css/main.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <title>My Games</title>
 </head>
-
-<body class="container">
-<div style="position: fixed; top: 20%; right: 0; border: 0;">
+<div style="position: absolute; top: 20%; right: 0; border: 0;">
     <a href="https://www.twitch.tv/"><button><span class="icon-twitch"></span></button></a>
 </div>
-    <header>
+<body class="container">
+
+    <input type="checkbox" id="toggle" class="menuInput">
+    <label for="toggle" class="menuLabel">
+        <img class="hamburger" src="./posts/img/hamburger.png">
+    </label>
+    <div class="topmenu">
         <a href="./index.html" ><button class="btn"><span class="icon-pacman"><p>Games</p></span></button></a>
-        <button class="btn"><span class="icon-bubbles2"><p>???</p></span></button>
-        <button class="btn"><span class="icon-cloud-download"><p>???</p></span></button>
-        <button class="btn"><span class="icon-binoculars"><p>???</p></span></button>
-        <button class="btn"><span class="icon-twitch"><p>???</p></span></button>
-    </header>
+        <a href="./info.html"><button class="btn"><span class="icon-bubbles2"><p>Info</p></span></button></a>
+        <button class="btn"><span class="icon-cloud-download"><p>Downloads</p></span></button>
+        <button class="btn"><span class="icon-binoculars"><p>Videos</p></span></button>
+        <button class="btn"><span class="icon-twitch"><p>Twitch</p></span></button>
+    </div>
 <img src="./svg/joystick.svg" class="Logo" alt="joystick">
 <div>
     <a href="https://www.rocketleague.com/"><img src="./posts/img/RL-ad.jpg" class="ad"></a>
