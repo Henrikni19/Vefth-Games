@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic@6.5.0/picnic.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>My Games</title>
+</head>
+
+<body class="container">
+    <a href="./front.html"><img src="./svg/joystick.svg" class="Logo1" alt="joystick"></a>
+    <input type="checkbox" id="toggle" class="menuInput">
+    <label for="toggle" class="menuLabel">
+        <img class="hamburger" src="./posts/img/hamburger.png">
+    </label>
+    <div class="topmenu">
+        <a href="./index.html" ><button class="btn"><span class="icon-pacman"><p>Games</p></span></button></a>
+        <a href="./info.html"><button class="btn"><span class="icon-bubbles2"><p>Info</p></span></button></a>
+        <button class="btn"><span class="icon-cloud-download"><p>Downloads</p></span></button>
+        <button class="btn"><span class="icon-binoculars"><p>Videos</p></span></button>
+        <button class="btn"><span class="icon-twitch"><p>Twitch</p></span></button>
+    </div>
+    <div style="position: absolute; top: 20%; right: 0; border: 0;">
+        <a href="https://www.twitch.tv/"><button><span class="icon-twitch"></span></button></a>
+    </div>
+<div>
+    <a href="https://www.rocketleague.com/"><img src="./posts/img/RL-ad.jpg" class="ad"></a>
+</div>
+
+
+
+
+<div id ="mycard">
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Game details</h2>
+      </div>
+      
+      
+      <div class="mdl-card__supporting-text">
+       Type in info!
+        <form action="#">
+          
+          <div id="name">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="[A-Za-z][a-z]*" id="first" required>
+        <label class="mdl-textfield__label" for="sample3">First Name</label>
+        <span class="mdl-textfield__error">Input is not a valid!</span>
+      </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="[A-Za-z][a-z]*" id="last" required>
+        <label class="mdl-textfield__label" for="sample3">Last Name</label>
+        <span class="mdl-textfield__error">Input is not a valid!</span>
+      </div>
+          </div>
+          
+           <div id="email">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="email" required>
+        <label class="mdl-textfield__label" for="sample2">E-mail</label>
+        <span class="mdl-textfield__error">Enter a valid email!</span>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" required>
+        <label class="mdl-textfield__label" for="sample4">Number...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      </div>
+          <div id="game">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" required>
+        <label class="mdl-textfield__label" for="sample2">Name of the game</label>
+          </div>
+          </div>
+          <div>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" required>
+            <span class="mdl-checkbox__label">Agree</span>
+          </label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+            <span class="mdl-radio__label">Yes</span>
+          </label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+            <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+            <span class="mdl-radio__label">No</span>
+          </label>
+        </div>
+          <div id="rating">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" pattern="([1-9]|1[0])" id="rating" required>
+          <label class="mdl-textfield__label" for="sample3">Rating (1-10)</label>
+          <span class="mdl-textfield__error">Input is not a valid!</span>
+        </div>
+        </div>
+        <div id="why">
+        <div class="mdl-textfield mdl-js-textfield" style="width: 200%;">
+            <textarea class="mdl-textfield__input" type="text" rows= "3" id="why" required></textarea>
+            <label class="mdl-textfield__label" for="sample5">Why would you recommend</label>
+        </div>
+        </div>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" type="submit">
+            <i class="material-icons">arrow_forward</i>
+          </button>
+        </form>
+       </div>
+    </div>
+  
+    </div>
+    
+
+</body>
